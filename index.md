@@ -1,16 +1,10 @@
-## Welcome to GitHub Pages
+## Hello! I'm Rachel
 
-You can use the [editor on GitHub](https://github.com/pillswor/pillswor.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I am currently a 2nd-year Master's student working with Dr. Ralph Pudritz at McMaster University. I am currently researching the effects of fragmentation and the role filaments play on the formation of young massive clusters. 
 
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```Introduction
-Hi I'm Rachel! :)
-``` 
 
 ```markdown
 Syntax highlighted code block
