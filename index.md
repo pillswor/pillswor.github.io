@@ -1,5 +1,5 @@
-## Hello! I'm Rachel
-![headshot_small](https://user-images.githubusercontent.com/105943864/169596018-015d2fcd-f323-42b3-8dfa-42340124d32c.jpg)
+![headshot_small](https://user-images.githubusercontent.com/105943864/169597213-75e4a16c-0c48-44bc-8603-99a9220b038f.jpg) # Hello! I'm Rachel
+
 
 
 
