@@ -9,10 +9,44 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h2,h3,h4,h5,h6 {font-family: "Noto Sans", sans-serif}
-h1 {font-family: "Ubuntu", sans-serif; font-size="30vw"; }
+h1 {font-family: "Ubuntu", sans-serif; font-size="60vw"; }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:"w3-black";
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:"w3-dark-grey";
+}
+
+.active {
+  background-color:"w3-light-green";
+}
   </style>
 </head>
 <body class="w3-black">
+ 
+ <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -29,7 +63,7 @@ h1 {font-family: "Ubuntu", sans-serif; font-size="30vw"; }
           <div class="w3-display-topright w3-container w3-text-light-green">
             <h1 class="font-effect-3d-float"><b>Rachel</b></h1>
           </div>
-          <div class="w3-display-right w3-container w3-text-green">
+          <div class="w3-display-right w3-container w3-text-light-green">
             <h1 class="font-effect-3d-float"><b>Pillsworth</b></h1>
           </div>
         </div>
