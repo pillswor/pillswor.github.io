@@ -44,6 +44,31 @@ li a:hover:not(.active) {
   margin-right:auto;
   width: 50%;
 }
+
+.collapsible {
+  background-color: "w3-dark-grey";
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #8bc34a;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
   
   </style>
 </head>
@@ -67,14 +92,12 @@ li a:hover:not(.active) {
 <div>
   <div class="w3-row-padding">
     <div class="w3-third">
-      <div class="w3-dark-grey w3-white w3-card-3">
-        <div class="w3-display-container">
-          <h2 style="text-align:center"> Invited Talks </h2>
+      <button class="collapsible">Invited Talks</button>
+        <div class="content">
           <h4> PSF Coffee, MPIA</h4>
           <p> The Effects of CNM Environment on Filament and Star Formation; June 21, 2023</p>
         </div>
       </div>
-    </div>
 
     <div class="w3-third">
       <div class="w3-dark-grey w3-white w3-card-3">
