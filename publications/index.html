@@ -42,11 +42,11 @@ li a:hover:not(.active) {
 }
 
 .collapsible {
-  background-color: "w3-dark-grey";
+  background-color: darkgrey;
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 80%;
   border: none;
   border-radius: 5px;
   text-align: left;
@@ -63,7 +63,7 @@ li a:hover:not(.active) {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: "w3-light-grey";
+  background-color: darkgrey;
 }
   
 </style>
@@ -78,27 +78,44 @@ li a:hover:not(.active) {
 </ul>
 
  <div class="w3-row-padding">
-   <div class="w3-third">
-     <button class="collapsible">Invited Talks</button>
-       <div class="content">
+ <div class="w3-third">
+ <button class="collapsible">Invited Talks</button>
+ <div class="content">
          <h4> PSF Coffee, MPIA</h4>
          <p> The Effects of CNM Environment on Filament and Star Formation; June 21, 2023</p>
-       </div>
-   </div>
+ </div>
+ </div>
 
-  <div class="w3-third">
-      <button class="collapsible">Contributed Talks</button>
-        <div class="content">
+ <div class="w3-third">
+ <button class="collapsible">Contributed Talks</button>
+ <div class="content">
           <h4> Clusters Conference 2022, McMaster University</h4>
           <p> The Effects of Fragmentation &amp Filamentary Feeding on Cluster Formation; August 25, 2022</p>
-        </div>
-  </div>
+ </div>
+ </div>
 
-  <div class="w3-third">
-      <button class="collapsible">Posters</button>
-        <div class="content">
+ <div class="w3-third">
+ <button class="collapsible">Posters</button>
+ <div class="content">
           <h4> Star@Lyon, Universit&eacute Claude Bernard Lyon</h4>
           <p> The Effects of CNM Environment on Filament and Star Formation; June 26-30, 2023</p>
-        </div>
-  </div>
-  </div>
+ </div>
+ </div>
+ </div>
+
+ <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
