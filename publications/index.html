@@ -42,16 +42,16 @@ li a:hover:not(.active) {
 }
 
 .collapsible {
-  background-color: darkgrey;
+  background-color: #777;
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 80%;
+  width: 100%;
   border: none;
   border-radius: 5px;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 22px;
 }
 
 .active, .collapsible:hover {
@@ -78,16 +78,46 @@ li a:hover:not(.active) {
 </ul>
 
 <div class="w3-row-padding">
+  <div class="w3-half">
   <button class="collapsible">First Author Papers</button>
   <div class="content">
-    <img src="./CNMpaper.png", alt="work in progress" class="center" style="width=75%">
-    <h3> Necessary Conditions for the formation of filaments and star clusters in the cold neutral medium </h3>
-    <h4> Rachel Pillsworth, Ralph E. Pudritz</h4>
-    <p> ADS link: </p>
+          <img src="./CNMpaper.png", alt="work in progress" class="center" style="width=75%">
+          <h3> Necessary Conditions for the formation of filaments and star clusters in the cold neutral medium </h3>
+          <h4> Rachel Pillsworth, Ralph E. Pudritz</h4>
+          <p> ADS link: </p>
+  </div>
+  </div>
+
+  <div class="w3-half">
+  <button class="collapsible">Co-Author Papers</button>
+  <div class="content">
+          <img src="./galpaper.png", alt="work in progress" class="center" style="width=75%">
+          <h3> Filamentary Hierarchies and Superbubbles: Galactic Multiscale MHD Simulations of GMC to Star Cluster Formation</h3>
+          <h4> Bo Zhao, Ralph E. Pudritz, Rachel Pillsworth, Hector Robinson, James Wadsley</h4>
+          <p> ADS link: N/A</p>
+  </div>
   </div>
   
-</div>
   
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 <footer class="w3-container w3-light-green w3-center w3-margin-top">
   <p class="w3-text-white">Have a great day! :)</p>
 </footer>
