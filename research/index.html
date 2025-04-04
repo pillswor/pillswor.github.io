@@ -46,6 +46,16 @@ li a:hover:not(.active) {
 .active {
   background-color:#8bc34a;
 }
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
   </style>
 </head>
 <body class="w3-black">
@@ -56,45 +66,40 @@ li a:hover:not(.active) {
   <li><a class="active" href="#research">Research</a></li>
   <li><a href="../publications/">Publications</a></li>
 </ul>
-  
-  <div id="galaxy" class="w3-content w3-margin-top" style="max-width:1400px;">
-        <div class="w3-center w3-black w3-margin-bottom">
-        <img src="../ngc_628.jpg" alt="JWST image of NGC 628" style="width:50%">
-         <div class="w3-container w3-card w3-black w3-margin-bottom">
-        <h2 class="w3-text-white w3-padding-16">Star Formation in Galactic Contexts</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Zoom-in Simulations</b></h5>
-          <p>The majority of star formation in Milky-Way type galaxies takes place in the dense spiral arm regions, making it costly to resolve in simulations. In my work, I use high-res simulations of a MW galaxy in RAMSES and perform zoom-in simulations to investigate areas of interest in star formation problems. By isolating a 3 kpc patch in the spiral arm of our galaxy, we can investigate the formation of molecular clouds and star clusters. Reaching a resolution of 0.3 pc in this region allows us to look at the fine-detail of the filamentary structure within the molecular clouds. By doing this work in a galactic disk, we have the benefit of including dynamics from the galactic disk, and having an environment that is linked to a larger galaxy through inflow/outflow, feedback, shear, magnetic fields, and more.</p>
-          <p>Current and future work on this scale will have us increasing our resolution to even smaller scales, allowing us to go sub-parsec and look into individual massive stars forming. By understanding the connections between galactic disk and massive stars, we can better understand the evolution of the two individually. Even more, this work can influence future star formation prescriptions in galactic simulations by pinpointing the necessary physical processes to include at galactic scales.</p>
-          <hr>
-        </div> 
+
+<h2>Research Topics</h2>
+
+<div class="row">
+
+	<div id="galaxy" class="column">
+    	<img src="../ngc_628.jpg" alt="JWST image of NGC 628" style="width:100%">
+        <h5 class="w3-opacity" style="width:100%"><b>Zoom-in Simulations</b></h5>
+        <p style="width:100%">The majority of star formation in Milky-Way type galaxies takes place in the dense spiral arm regions, making it costly to resolve in simulations. In my work, I use high-res simulations of a MW galaxy in RAMSES and perform zoom-in simulations to investigate areas of interest in star formation problems. By isolating a 3 kpc patch in the spiral arm of our galaxy, we can investigate the formation of molecular clouds and star clusters. Reaching a resolution of 0.3 pc in this region allows us to look at the fine-detail of the filamentary structure within the molecular clouds. By doing this work in a galactic disk, we have the benefit of including dynamics from the galactic disk, and having an environment that is linked to a larger galaxy through inflow/outflow, feedback, shear, magnetic fields, and more.</p>
+          <p style="width:100%">Current and future work on this scale will have us increasing our resolution to even smaller scales, allowing us to go sub-parsec and look into individual massive stars forming. By understanding the connections between galactic disk and massive stars, we can better understand the evolution of the two individually. Even more, this work can influence future star formation prescriptions in galactic simulations by pinpointing the necessary physical processes to include at galactic scales.</p>
         
-  </div>
-  </div>
-  <div id="ism" class="w3-content w3-margin-top" style="max-width:1400px;"> 
-         <div class="w3-center w3-black w3-margin-bottom">
-         <img src="../ism.png" alt="ISM" style="width:50%">
-          <div class="w3-container w3-card w3-black w3-margin-bottom">
-        <h2 class="w3-text-white w3-padding-16">Structure Formation in the ISM</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>The cold, neutral medium</b></h5>
-          <p>In a continuation of the work of my Master's thesis, I also investigate the formation of structure in the cold phases of the ISM on a kpc scale. In an isolated, 0.5 kpc cube in RAMSES, I include magnetic fields, decaying turbulence and heating/cooling from Grackle. By varying the strength and crossing time of the turbulence, we can create environments of different velocity dispersions, mimicking either active or quiescent regions of a galactic disk. In this work we have analyzed the importance of magnetic fields in the formation of structure at ISM scales. While turbulence and gravity alone can create filaments, we find magnetic fields play a significant role in the formation of high-density gas for star formation. Magnetic fields can improve the efficiency of the formation of high-density gas, leading to more rapid cluster formation. Magnetic fields also cause a 0.4 Myr delay in cluster formation onset, despite being responsible for the formation of more protoclusters. Finally, we also find magnetic fields affect the line masses of filaments, providing support to the filaments and keeping fragmentation localized to small clumps of filaments as opposed to the entire length.</p>
-          <hr>
-        </div>
-  </div>
-  </div>
-  <div id="clusters" class="w3-content w3-margin-top" style="max-width:1400px;"> 
-        <div class="w3-center w3-black w3-margin-bottom">
-        <img src="../highres_r136.jpg" alt="R136 cluster" style="width:50%">
-          <div class="w3-container w3-card w3-black w3-margin-bottom">
-        <h2 class="w3-text-white w3-padding-16"></i>Star Cluster Formation</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>The most massive stars</b></h5>
-          <p>The overarching interest in all my work is that of massive stars. Previous works of isolated molecular cloud simulations have found that the most massive stars tend to form in the most massive clusters, which themselves tend to form in the most massive clouds, indicating some connection between the scales. I am interested in how all of these scales link to each other to create this ladder. Investigating the way stars form from clusters, and how clusters form from molecular clouds, is an important step in finding these links. Overall, it is my goal to create a complete picture of star formation, from galaxy to protostar, in order to understand the relevant physics at each scale and uncover what we don't yet know of massive star formation. We investigate this through the filamentary hierarchy, where we propose that filaments at all scales are the same such that atomic gas filaments become molecular as they gain mass and contract to smaller widths due to gravity.</p>
-          <hr>
-        </div>
-  </div>
+    </div>
+    <div id="ism" class="column"> 
+         <img src="../ism.png" alt="ISM" style="width:100%">
+         <h5 class="w3-opacity" style="width:100%"><b>The cold, neutral medium</b></h5>
+         <p style="width:100%">In a continuation of the work of my Master's thesis, I also investigate the formation of structure in the cold phases of the ISM on a kpc scale. In an isolated, 0.5 kpc cube in RAMSES, I include magnetic fields, decaying turbulence and heating/cooling from Grackle. By varying the strength and crossing time of the turbulence, we can create environments of different velocity dispersions, mimicking either active or quiescent regions of a galactic disk. In this work we have analyzed the importance of magnetic fields in the formation of structure at ISM scales. While turbulence and gravity alone can create filaments, we find magnetic fields play a significant role in the formation of high-density gas for star formation. Magnetic fields can improve the efficiency of the formation of high-density gas, leading to more rapid cluster formation. Magnetic fields also cause a 0.4 Myr delay in cluster formation onset, despite being responsible for the formation of more protoclusters. Finally, we also find magnetic fields affect the line masses of filaments, providing support to the filaments and keeping fragmentation localized to small clumps of filaments as opposed to the entire length.</p>
+    </div>
+    <div id="clusters" class="column"> 
+        <img src="../highres_r136.jpg" alt="R136 cluster" style="width:100%">
+        <h5 class="w3-opacity" style="width:100%"><b>The most massive stars</b></h5>
+         <p style="width:100%">The overarching interest in all my work is that of massive stars. Previous works of isolated molecular cloud simulations have found that the most massive stars tend to form in the most massive clusters, which themselves tend to form in the most massive clouds, indicating some connection between the scales. I am interested in how all of these scales link to each other to create this ladder. Investigating the way stars form from clusters, and how clusters form from molecular clouds, is an important step in finding these links. Overall, it is my goal to create a complete picture of star formation, from galaxy to protostar, in order to understand the relevant physics at each scale and uncover what we don't yet know of massive star formation. We investigate this through the filamentary hierarchy, where we propose that filaments at all scales are the same such that atomic gas filaments become molecular as they gain mass and contract to smaller widths due to gravity.</p>
+    </div>
+
+</div>
+
+<h2>Interactive Figures</h2>
+
+<p>A filament spine from a 60 pc cube around the active region defined in Zhao et al. 2024, Wells et al. in prep</p>
+<iframe src="/figures/fil0_60pc_parallel.html" width="100%" height="300" style="border:none;">
+</iframe>
+  
+</body>
 
 <footer class="w3-container w3-light-green w3-center w3-margin-top">
   <p class="w3-text-white">Have a great day! :)</p>
 </footer>
+</html>
